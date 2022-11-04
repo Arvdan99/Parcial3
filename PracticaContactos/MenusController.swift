@@ -53,7 +53,7 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
     }
     
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToEditar" {
+        if segue.identifier == "goToPerfil" {
             let destino = segue.destination as! EditarContactoController
             destino.Menus = Menus[tvMenus.indexPathForSelectedRow!.row]
             destino.CallBackActualizar = actualizarEtiqueta
